@@ -2,6 +2,10 @@ import React from "react";
 import {motion, useMotionValue, useTransform} from "framer-motion";
 import styled from "styled-components";
 
+const StyledScenarioList = styled.div`
+    overflow-y: scroll;
+`;
+
 const ScenarioWrapper = styled.div`
     padding: 50px;
     margin-top: 10px;
@@ -71,13 +75,13 @@ const Scenario5 = () => {
 
 const Basics = () => {
     return (
-        <>
+        <StyledScenarioList>
             Scenario 1: <ScenarioWrapper><Scenario1/></ScenarioWrapper>
             Scenario 2: <ScenarioWrapper><Scenario2/></ScenarioWrapper>
             Scenario 3: <ScenarioWrapper><Scenario3/></ScenarioWrapper>
             Scenario 4: <ScenarioWrapper><Scenario4/></ScenarioWrapper>
             Scenario 5: <ScenarioWrapper><Scenario5/></ScenarioWrapper>
-        </>
+        </StyledScenarioList>
     )
 };
 
