@@ -58,6 +58,17 @@ const Scenario4 = () => {
     )
 };
 
+const Scenario5 = () => {
+    return (
+        <motion.div
+            animate={{rotate: 360}}
+            transition={{duration: 2}}
+        >
+            How do you like my rotation?
+        </motion.div>
+    )
+};
+
 const Basics = () => {
     return (
         <>
@@ -65,6 +76,7 @@ const Basics = () => {
             Scenario 2: <ScenarioWrapper><Scenario2/></ScenarioWrapper>
             Scenario 3: <ScenarioWrapper><Scenario3/></ScenarioWrapper>
             Scenario 4: <ScenarioWrapper><Scenario4/></ScenarioWrapper>
+            Scenario 5: <ScenarioWrapper><Scenario5/></ScenarioWrapper>
         </>
     )
 };
